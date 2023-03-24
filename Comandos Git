@@ -73,3 +73,5 @@ git reset --soft origin/master "Solo se pierde el ultimo commit"
 git reset HEAD~1 "Solo elimina los commit hechos en nuestro local"
 
 git revert HEAD~1
+
+git cherry-pick "agrega un commit hecho en otra rama que queremos utilizar en un nueva rama" 
