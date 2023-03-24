@@ -1,0 +1,75 @@
+git init
+
+git config --list
+
+git config --global user.name 'Melvinrl'
+
+git config --global user.email 'melvinrl@hotmail.com'
+
+git commit -m "first commit"
+
+git branch -M main
+
+git add .
+
+git remote add origin https://github.com/MelvinLanuza/RepositorioUcem.git
+
+git push -u origin main
+
+git merge 'rama' integra la rama a master
+
+git remote -v 'Repositorios vinculados a mi local'
+
+git blame nombrearchivo 'Muestra las modificaciones que sufrio un archivo'
+
+git status 'muestra el estado del repositorio'
+
+git diff 'diferencia entre lo modificado y el area de preparacion'
+
+git diff --staged 'diferencia entre area de preparacion y el repositorio'
+
+git checkout 'rama' nos cambia a la rama mencionda
+
+git checkout -b 'rama' crea una rama y nos cambia a esa rama
+
+git log 'muestra el historial de los commit realizados'
+
+git log --oneline 'muestra el historial resumido'
+
+git log --oneline -10 ''
+
+git log --oneline -10 --pretty=formato:'%h %an %s'
+
+git log --oneline --graph
+
+git branch 'lista las ramas locales'
+
+git branch -a 'muestra las ramas remotas'
+
+git branch -D 'rama' 'borra la rama'
+
+git push -d origin 'rama' 'borra una rama remota'
+
+git config --global alias.lg 'log --oneline -10 --pretty=formato:'%h %an %s''
+
+git config --list | grep aliasgit 
+
+git stash save -u "comentario del stash"
+
+git stash branch nombreRama stash nombreStash "Crea una rama a partir del Stash"
+
+git stash apply nombreStash "Aplica el Stash y lo mantiene"
+
+git stash drop nombreStash "Elimina el Stash"
+
+git stash pop nombreStash "Aplica el Stash y lo borra"
+
+git commit -m "esto es un commit combinado" --amend
+
+git reset --hard origin/master "Iguala la rama local con la remota perdiendo todos los commits"
+
+git reset --soft origin/master "Solo se pierde el ultimo commit"
+
+git reset HEAD~1 "Solo elimina los commit hechos en nuestro local"
+
+git revert HEAD~1
